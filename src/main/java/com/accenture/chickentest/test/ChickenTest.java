@@ -4,19 +4,22 @@
  */
 package com.accenture.chickentest.test;
 
-import com.accenture.chickentest.*;
-import com.accenture.chickentest.cattle.*;
-import com.accenture.chickentest.db.*;
-import com.accenture.chickentest.exceptions.LocationException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import com.accenture.chickentest.business.World;
+import com.accenture.chickentest.business.Farm;
+import com.accenture.chickentest.business.Location;
+import com.accenture.chickentest.business.Egg;
+import com.accenture.chickentest.business.Chicken;
+import com.accenture.chickentest.business.Animal;
+import com.accenture.chickentest.data.PostgreSQL;
+import com.accenture.chickentest.data.IDataManagement;
 
 public class ChickenTest {
 
     public static void main(String[] args) {
-
-        IDatabaseConnection db = new PostgreSQL(); // creates an obj of database type
-        db.connect(); // connects to the db
+        
+        final String resourceName = "ChickenTestData";
+        IDataManagement db = new PostgreSQL(); // creates an obj of database type
+        db = (PostgreSQL) db.openResource(resourceName); // connects to the db
 
         World world;
         Location location;
@@ -52,6 +55,6 @@ public class ChickenTest {
             //ex.printStackTrace(System.out);
         }
 
-        db.disconnect();// disconnect the db
+        db.closeResource(resourceName);// disconnect the db
     }
 }

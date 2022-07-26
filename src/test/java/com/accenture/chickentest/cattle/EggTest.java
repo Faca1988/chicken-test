@@ -4,6 +4,10 @@
  */
 package com.accenture.chickentest.cattle;
 
+import com.accenture.chickentest.business.Egg;
+import com.accenture.chickentest.business.Chicken;
+import com.accenture.chickentest.business.Animal;
+
 public class EggTest {
 
     public static void main(String[] args) {

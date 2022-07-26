@@ -3,9 +3,8 @@
  * @author facundo.campos
  */
 
-package com.accenture.chickentest;
+package com.accenture.chickentest.business;
 
-import com.accenture.chickentest.cattle.*;
 
 public class Farm {
     
@@ -31,7 +30,7 @@ public class Farm {
         this.money = 100;
     }
     
-    public void sell(Animal cattle){
+    public void sell(Animal cattle) throws Exception{
         System.out.println("you sell a " + cattle.getSpecie());
         if (cattle instanceof Egg){ 
             for (int i = 0; i < this.eggsHave; i++) {
@@ -61,7 +60,7 @@ public class Farm {
         }
     }
     
-    public void buy(Animal cattle){
+    public void buy(Animal cattle) throws Exception{
         System.out.println("you buy a " + cattle.getSpecie());
         if (cattle instanceof Egg){ 
             this.eggs[this.eggsHave++] = (Egg)cattle;

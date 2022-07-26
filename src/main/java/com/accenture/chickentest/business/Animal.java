@@ -3,7 +3,7 @@
  * @author facundo.campos
  */
 
-package com.accenture.chickentest.cattle;
+package com.accenture.chickentest.business;
 
 public abstract class Animal {
         

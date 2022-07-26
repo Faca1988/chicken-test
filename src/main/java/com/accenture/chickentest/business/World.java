@@ -3,8 +3,9 @@
  * @author facundo.campos
  *
  */
-package com.accenture.chickentest;
+package com.accenture.chickentest.business;
 
+import com.accenture.chickentest.business.Farm;
 import java.time.LocalDateTime;
 
 public class World {

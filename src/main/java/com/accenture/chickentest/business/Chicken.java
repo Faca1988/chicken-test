@@ -2,7 +2,7 @@
  *
  * @author facundo.campos
  */
-package com.accenture.chickentest.cattle;
+package com.accenture.chickentest.business;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;

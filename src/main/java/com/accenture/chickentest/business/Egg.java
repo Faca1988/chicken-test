@@ -3,7 +3,7 @@
  * @author facundo.campos
  */
 
-package com.accenture.chickentest.cattle;
+package com.accenture.chickentest.business;
 
 public class Egg extends Animal{
     private final int idEgg;
