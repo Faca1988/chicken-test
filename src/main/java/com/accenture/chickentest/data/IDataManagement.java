@@ -11,7 +11,6 @@ import java.util.List;
 public interface IDataManagement {
     public final static int MAX_REGS = 100;
     
-    
     public abstract Object openResource(String resourceName); // connect to the db
     public abstract void closeResource(Object resource); // disconnect to the db
     public abstract void create(Object resource, Object obj) throws DataAccessException; // create an obj in the db

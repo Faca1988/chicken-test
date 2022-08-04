@@ -2,7 +2,7 @@
  *
  * @author facundo.campos
  */
-package com.accenture.chickentest.business;
+package com.accenture.chickentest.domain;
 
 import com.accenture.chickentest.exceptions.LocationException;
 

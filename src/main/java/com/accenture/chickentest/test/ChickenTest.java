@@ -5,11 +5,11 @@
 package com.accenture.chickentest.test;
 
 import com.accenture.chickentest.business.World;
-import com.accenture.chickentest.business.Farm;
-import com.accenture.chickentest.business.Location;
-import com.accenture.chickentest.business.Egg;
-import com.accenture.chickentest.business.Chicken;
-import com.accenture.chickentest.business.Animal;
+import com.accenture.chickentest.domain.Farm;
+import com.accenture.chickentest.domain.Location;
+import com.accenture.chickentest.domain.Egg;
+import com.accenture.chickentest.domain.Chicken;
+import com.accenture.chickentest.domain.Animal;
 import com.accenture.chickentest.data.PostgreSQL;
 import com.accenture.chickentest.data.IDataManagement;
 

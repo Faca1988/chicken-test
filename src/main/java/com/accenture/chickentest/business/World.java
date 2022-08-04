@@ -5,7 +5,8 @@
  */
 package com.accenture.chickentest.business;
 
-import com.accenture.chickentest.business.Farm;
+import com.accenture.chickentest.domain.Farm;
+import com.accenture.chickentest.domain.Farm;
 import java.time.LocalDateTime;
 
 public class World {
