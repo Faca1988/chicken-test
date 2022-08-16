@@ -1,0 +1,100 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: linear-gradient(#7209b7, #3f37c0);
+  color: #fff;
+}
+
+#app-title {
+  text-align: center;
+  text-decoration: underline;
+  height: 2%;
+  color: #fff;
+}
+
+#content {
+  position: relative;
+  left: 0;
+  top: 2%;
+
+}
+
+#content iframe {
+  width: 100%;
+  scroll-behavior: inherit;
+  height: 80vh;
+}
+
+#LogOption {
+  position: relative;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+}
+
+#footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2%;
+  background-color: rgba(60, 60, 234, 0.76);
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+
+
+.login-container {
+  margin: 0 auto;
+  width: 400px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.login-container h3 {
+  margin: 0 0 30px;
+  padding-bottom: 400vh;
+  padding: 0;
+  color: #4cc9f0;
+  text-align: center;
+}
+
+.login-container .login-form-element label {}
+
+.login-container .login-form-element input {
+  width: 100%;
+  padding: 10px 0;
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 30px;
+}
+
+.login-container .login-form-element input[type="submit"] {
+  background-color: #f72585;
+  border: none;
+  letter-spacing: 5px;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+.login-form-row {
+  display: flex;
+}

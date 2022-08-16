@@ -12,6 +12,7 @@ public class ChickenTestApp {
     static BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
     static int option = -1;
     static boolean userLoged;
+    static User loggedUser;
 
     public static void main(String[] args) throws IOException {
 
@@ -33,11 +34,21 @@ public class ChickenTestApp {
             ChickenTestApp.option = Integer.parseInt(console.readLine());
 
             switch (ChickenTestApp.option) {
-                case 1 -> login();
-                case 2 -> logout();
-                case 3 -> register();
-                case 0 -> System.out.println("Exiting from App...");
-                default -> System.out.println("The option introduced is not valid. Please use the number of the options showed to continue.");
+                case 1: 
+                    login();
+                    break;
+                case 2: 
+                    logout();
+                    break;
+                case 3: 
+                    register();
+                    break;
+                case 0: 
+                    System.out.println("Exiting from App...");
+                    break;
+                default:
+                    System.out.println("The option introduced is not valid. Please use the number of the options showed to continue.");
+                    break;
             }
         } while (ChickenTestApp.option != 0);
     }
@@ -87,6 +98,7 @@ public class ChickenTestApp {
     
     public static void logout() throws IOException{
         //desloguear usuario
+        loggedUser = null;
         userLoged = false;
         System.out.println("User has been logged out.");
     }
@@ -126,23 +138,28 @@ public class ChickenTestApp {
             ChickenTestApp.option = Integer.parseInt(console.readLine());
 
             switch (ChickenTestApp.option) {
-                case 1 -> {}
-                    //newFarm();
-                case 2 -> {
-                }
-                case 3 -> {
-                }
-                case 0 -> {
-                }
-                default -> {
-                }
+                case 1:
+                    newFarm(loggedUser);
+                    break;
+                case 2:
+                    loadFarm(loggedUser);
+                    break;
+                case 3:
+                    listFarms(loggedUser);
+                    break;
+                case 0:
+                    break;//exiting msg
+                default:
+                    break; // not valid option msg
             }
 
         } while (ChickenTestApp.option != 0);
         ChickenTestApp.option = -1;
     }
     
-    public static void newFarm(String user){}
+    public static void newFarm(User user){}
+    public static void loadFarm(User user){}
+    public static void listFarms(User user){}
 
     public static void gameMenu() {
         System.out.println("====================================================");
