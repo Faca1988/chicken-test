@@ -29,7 +29,6 @@ public class LoginSVL extends HttpServlet {
 
         if (req.getParameter("user").equals(user) && req.getParameter("password").equals(psw)) {
             resp.setStatus(HttpServletResponse.SC_ACCEPTED);
-
             resp.sendRedirect(USER_PAGE);
         } else {
             resp.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Unauthorized User");

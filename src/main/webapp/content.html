@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <title>MENU</title>
+    <title>Menu</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Menu</a>
+            <a class="navbar-brand" href="/chicken-test/default_page.html" target="menuContent">Menu de opciones</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -23,15 +23,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="https://getbootstrap.com/docs/5.2/components/navbar/#color-schemes" target="menuContent" >Home</a>
+                        <a class="nav-link active" aria-current="page" href="/chicken-test/create_farm.html" target="menuContent" >Crear granja</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" target="menuContent">Link</a>
+                        <a class="nav-link" href="/chicken-test/load_farm.html" target="menuContent">Cargar granja</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/chicken-test/report_farm.html" target="menuContent">Reporte de granjas</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Options
+                            Opciones
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
@@ -49,8 +52,8 @@
             </div>
         </div>
     </nav>
-    <section id="content">
-        <iframe src="farm.html" frameborder="0" name="menuContent"></iframe>
+    <section class="content" id="framepage">
+        <iframe class="content-frame" src="default_page.html" frameborder="0" name="menuContent"></iframe>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">

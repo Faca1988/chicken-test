@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Create a new farm</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <fieldset class="fieldset">
+            <legend class="fieldset-legend"><h3>Create a new farm</h3></legend>
+            <form class="fieldset-form" method="get" action="/chicken-test/NewFarmSVL" name="newFarmForm" id="newFarmForm" >
+                <div>
+                    <label class="fieldset-form-label">Farm's Name:</label>
+                    <input class="fieldset-form-input" type="text" name="farmName" id="farmName" required />
+                </div>
+                <div>
+                    <label class="fieldset-form-label">Chickens:</label>
+                    <input class="fieldset-form-input" type="number" name="chickenNbr" id="chickenNbr" value="0"/>
+                </div>
+                <div>
+                    <label class="fieldset-form-label">Eggs:</label>
+                    <input class="fieldset-form-input" type="number" name="eggNbr" id="eggNbr" value="0"/>
+                </div>
+                <div>
+                    <label class="fieldset-form-label">Money:</label>
+                    <input class="fieldset-form-input" type="number" name="money" id="money" value="500"/>
+                </div>
+                <div>
+                    <input class="fieldset-form-button" type="submit" value="Crear"/>
+                    <input class="fieldset-form-button" type="reset" value="Limpiar"/>
+                </div>
+            </form>
+        </fieldset>
+        
+    </body>
+</html>

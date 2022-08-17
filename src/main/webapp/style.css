@@ -1,100 +1,183 @@
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background: linear-gradient(#7209b7, #3f37c0);
-  color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(#7209b7, #3f37c0);
+    color: #fff;
 }
 
 #app-title {
-  text-align: center;
-  text-decoration: underline;
-  height: 2%;
-  color: #fff;
-}
-
-#content {
-  position: relative;
-  left: 0;
-  top: 2%;
-
-}
-
-#content iframe {
-  width: 100%;
-  scroll-behavior: inherit;
-  height: 80vh;
+    text-align: center;
+    text-decoration: underline;
+    height: 2%;
+    color: #fff;
+    margin-bottom: 1em;
 }
 
 #LogOption {
-  position: relative;
-  left: 0;
-  width: 100%;
-  height: 90vh;
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 92.5vh;
+}
+
+#framepage{
+    padding-top: 3em;
 }
 
 #footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2%;
-  background-color: rgba(60, 60, 234, 0.76);
-  color: white;
-  text-align: center;
-  margin-top: 5px;
-  padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(33,37,41, 0.9);
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+    height: 6vh;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(33,37,41, 0.9);
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+    padding: 10px;
+    height: 6vh;
+}
+
+.log-menu{
+    background-color: transparent;
+    color: #fff;
+}
+
+.content {
+    position: relative;
+    left: 0;
+    top: 2%;
+}
+
+.content-frame {
+    width: 100%;
+    height: 91vh;
 }
 
 .title {
-  text-align: center;
+    text-align: center;
 }
 
+.logo{
+    border-radius: 10px;
+    width: 40px;
+    height: 50px;
+}
 
+.logo-center {
+    text-align: center;
+    margin: 5em auto;
+}
+
+.logo-img{
+    border-radius: 50px;
+}
 
 .login-container {
-  margin: 0 auto;
-  width: 400px;
-  padding: 30px;
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
+    margin: 2em auto;
+    width: 400px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 .login-container h3 {
-  margin: 0 0 30px;
-  padding-bottom: 400vh;
-  padding: 0;
-  color: #4cc9f0;
-  text-align: center;
+    margin: 0 0 30px;
+    padding-bottom: 400vh;
+    padding: 0;
+    color: #4cc9f0;
+    text-align: center;
 }
 
-.login-container .login-form-element label {}
+.login-container .login-form-element label {
+}
 
 .login-container .login-form-element input {
-  width: 100%;
-  padding: 10px 0;
-  color: #fff;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #fff;
-  margin-bottom: 30px;
+    width: 100%;
+    padding: 10px 0;
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
 }
 
 .login-container .login-form-element input[type="submit"] {
-  background-color: #f72585;
-  border: none;
-  letter-spacing: 5px;
-  font-weight: 900;
-  text-transform: uppercase;
-  cursor: pointer;
-  padding: 15px;
-  margin-top: 30px;
+    background-color: #f72585;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    margin-top: 30px;
+    width: 100%;
 }
 
 .login-form-row {
-  display: flex;
+    display: flex;
+}
+
+.fieldset {
+    color: #fff;
+    margin: 2em auto;
+    border-color: #fff;
+    width: 600px;
+    padding: 0px 30px 30px 30px;
+}
+
+.fieldset-legend{
+    font-size: 2em;
+    text-align: center;
+}
+
+.fieldset-form{
+    font-size: 1.5em;
+    line-height: 2em;
+    text-align: center;
+}
+
+.fieldset-form-label{
+}
+
+.fieldset-form-input{
+    margin-left: 1em;
+    font-size: .8em;
+    letter-spacing: 0.2em;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+}
+.fieldset-form-button{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 900;
+    letter-spacing: 0.2em;
+    color: #fff;
+    background-color: #f72585;
+    border: none;
+    border-radius: 10px;
+    width: 45%;
+    padding: 15px;
+    margin-top: 30px;
 }
